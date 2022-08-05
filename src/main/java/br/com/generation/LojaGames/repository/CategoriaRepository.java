@@ -11,6 +11,6 @@ import br.com.generation.LojaGames.model.Categoria;
 @Repository
 public interface CategoriaRepository extends JpaRepository<Categoria, Long>{
 	
-	public List<Categoria>findByCategoriaContainingIgnoreCase(@Param("descricao")String descricao);	
+	public List<Categoria>findByDescricaoContainingIgnoreCase(@Param("descricao")String descricao);	
 	
 }
